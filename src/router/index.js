@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home'
-import Setting from'../views/Setting'
-Vue.use(VueRouter)
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home";
+import Setting from "../views/Setting";
+import Study from "../views/Study";
+Vue.use(VueRouter);
 
 // const routes = [
 //   {
@@ -21,11 +22,12 @@ Vue.use(VueRouter)
 // ]
 
 const router = new VueRouter({
-  routes:[
-    {path: '/home', component: Home},
-    {path: '/setting', component: Setting },
-    { path: '/', redirect: '/home' }
-  ]
-})
+  routes: [
+    { path: "/home", component: Home },
+    { path: "/setting", component: Setting },
+    { path: "/", redirect: "/home" },
+    { path: "/study", component: Study },
+  ],
+});
 
-export default router
+export default router;
